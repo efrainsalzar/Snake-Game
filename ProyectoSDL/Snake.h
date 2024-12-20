@@ -9,6 +9,7 @@
 
 class Snake {
 private:
+    //helloword
     std::vector<SDL_Rect> body;  // Cuerpo de la serpiente
     std::vector<SDL_Color> bodyColors;
     int dirX, dirY;              // Dirección de movimiento
