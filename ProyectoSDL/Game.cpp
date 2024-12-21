@@ -80,18 +80,18 @@ void Game::run() {
         switch (snake->checkCollisions(food->getPosition(), screenWidth, screenHeight)
             ) {
         case Snake::CollisionType::Food:
-            std::cout << "¡Fruta comida!" << std::endl;
+            //std::cout << "¡Fruta comida!" << std::endl;
             snake->grow();
             food->spawn(screenWidth, screenHeight);  // Cambia la posición de la fruta
             break;
 
         case Snake::CollisionType::Border:
-            std::cout << "Colisión con el borde. Fin del juego." << std::endl;
+            //std::cout << "Colisión con el borde. Fin del juego." << std::endl;
             isRunning = false;
             break;
 
         case Snake::CollisionType::Self:
-            std::cout << "Colisión con el propio cuerpo. Fin del juego." << std::endl;
+            //std::cout << "Colisión con el propio cuerpo. Fin del juego." << std::endl;
             isRunning = false;
             break;
 
